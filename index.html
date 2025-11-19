@@ -1,265 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio — Administración de Sistemas | 19 años</title>
-  <meta name="description" content="Portfolio personal - estudiante de Administración de Sistemas Informáticos en Red. Intereses: tecnología, musculación, nutrición y videojuegos." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent1:#7c3aed; --accent2:#06b6d4;
-      --glass: rgba(255,255,255,0.04);
-      --glass-2: rgba(255,255,255,0.02);
-      --radius: 14px;
-      color-scheme: dark;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,var(--bg),#071022 120%);color:#e6eef6}
-    a{color:inherit;text-decoration:none}
-    .container{max-width:1100px;margin:40px auto;padding:24px}
-
-    /* Header */
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{display:flex;align-items:center;gap:14px}
-    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:grid;place-items:center;font-weight:800;color:white;font-size:20px;box-shadow:0 6px 30px rgba(12,12,20,0.6)}
-    h1{font-size:20px;margin:0}
-    p.lead{margin:0;color:var(--muted);font-size:13px}
-
-    /* Main grid */
-    .grid{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:28px}
-
-    /* Cards */
-    .card{background:linear-gradient(180deg,var(--glass),var(--glass-2));padding:18px;border-radius:var(--radius);backdrop-filter:blur(6px);box-shadow:0 6px 30px rgba(2,6,23,0.6)}
-    .card h2{margin:0 0 12px 0;font-size:16px}
-    .meta{color:var(--muted);font-size:13px}
-
-    /* About */
-    .about .intro{display:flex;gap:18px}
-    .avatar{width:120px;height:120px;border-radius:14px;overflow:hidden;flex:0 0 120px;background:linear-gradient(135deg,#0ea5a4,#06b6d4);display:grid;place-items:center;font-size:48px;font-weight:800;color:rgba(255,255,255,0.95)}
-    .about p{line-height:1.5;color:#d8e6f2}
-
-    /* Skills */
-    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
-    .skill{background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:999px;font-size:13px;color:var(--muted)}
-
-    /* Stats */
-    .stats{display:flex;gap:12px;margin-top:12px}
-    .stat{background:linear-gradient(90deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:10px;border-radius:12px;flex:1;text-align:center}
-    .stat b{display:block;font-size:18px}
-
-    /* Projects list */
-    .projects{display:grid;gap:12px}
-    .project{display:flex;gap:12px;align-items:center}
-    .thumbnail{width:88px;height:64px;border-radius:8px;background:linear-gradient(135deg,#111827,#0b1220);display:grid;place-items:center;font-weight:600;color:var(--muted)}
-    .proj-body h3{margin:0;font-size:14px}
-    .proj-body p{margin:6px 0 0 0;color:var(--muted);font-size:13px}
-
-    /* Right column */
-    .panel{display:flex;flex-direction:column;gap:14px}
-    .follow{display:flex;gap:8px}
-    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;background:rgba(255,255,255,0.03);cursor:pointer;border:1px solid rgba(255,255,255,0.03)}
-    .btn:hover{transform:translateY(-3px)}
-
-    /* News feed placeholder */
-    .feed{max-height:220px;overflow:auto;padding-right:6px}
-    .feed-item{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.02);margin-bottom:8px}
-    .feed-item h4{margin:0;font-size:13px}
-    .feed-item p{margin:6px 0 0 0;color:var(--muted);font-size:13px}
-
-    /* Contact */
-    form{display:grid;gap:8px}
-    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:10px;border-radius:8px;color:inherit;font-size:14px}
-    .actions{display:flex;gap:8px}
-
-    footer{margin-top:30px;display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px}
-
-    /* responsive */
-    @media (max-width:960px){
-      .grid{grid-template-columns:1fr;}
-      .container{margin:20px}
-    }
-
-    /* subtle animations */
-    .reveal{opacity:0;transform:translateY(12px);animation:reveal 0.6s forwards}
-    .reveal.delay-1{animation-delay:0.12s}
-    .reveal.delay-2{animation-delay:0.24s}
-    .reveal.delay-3{animation-delay:0.36s}
-    @keyframes reveal{to{opacity:1;transform:none}}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargar Archivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .download-link {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin: 10px 0;
+        }
+        .download-link:hover {
+            background-color: #0056b3;
+        }
+        .file-info {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #007bff;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header class="reveal">
-      <div class="brand">
-        <div class="logo">AS</div>
-        <div>
-          <h1>Chaval de 19 — Administración de Sistemas</h1>
-          <p class="lead">Estudiante | apasionado por la tecnología, musculación y videojuegos</p>
+    <div class="container">
+        <h1>Descargar Archivo</h1>
+        
+        <p>Haz clic en el siguiente enlace para descargar el archivo:</p>
+        
+        <!-- Enlace de descarga -->
+        <a href="documentos/INAZUMA ELEVEN Victory Road Upd.1.2.0.rar" download class="download-link">
+            📥 Descargar Archivo
+        </a>
+        
+        <div class="file-info">
+            <p><strong>Archivo:</strong> mi-archivo.pdf</p>
+            <p><strong>Tamaño:</strong> 2.5 MB</p>
+            <p><strong>Formato:</strong> PDF Document</p>
         </div>
-      </div>
-      <nav class="reveal delay-1">
-        <a class="btn" href="#about">Sobre mí</a>
-        <a class="btn" href="#proyectos">Proyectos</a>
-        <a class="btn" href="#contacto">Contacto</a>
-      </nav>
-    </header>
-
-    <main class="grid">
-      <section>
-        <article class="card about reveal delay-2" id="about">
-          <div class="intro">
-            <div class="avatar">19</div>
-            <div>
-              <h2>Hola — soy un estudiante de Administración de Sistemas</h2>
-              <p>Soy un chico de 19 años que estudia <strong>Administración de Sistemas Informáticos en Red</strong>. Me encanta todo lo que tiene que ver con la <strong>tecnología</strong>: montar servicios, entender redes y mantener servidores seguros y optimizados. Además, vivo por la <strong>musculación</strong> y la <strong>nutrición</strong>, y siempre intento aplicar un enfoque científico a mis entrenamientos y a mi dieta.</p>
-              <p class="meta">Siempre informado sobre las novedades tecnológicas y con tiempo para <strong>videojuegos</strong> como método de desconexión y diversión.</p>
-
-              <div class="skills" aria-hidden>
-                <span class="skill">Linux</span>
-                <span class="skill">Redes</span>
-                <span class="skill">Docker</span>
-                <span class="skill">Bash</span>
-                <span class="skill">Nutrición</span>
-                <span class="skill">Musculación</span>
-                <span class="skill">Gaming</span>
-              </div>
-
-              <div class="stats">
-                <div class="stat">
-                  <div class="meta">Años estudiando</div>
-                  <b>2</b>
-                </div>
-                <div class="stat">
-                  <div class="meta">Horas/semana</div>
-                  <b>10+</b>
-                </div>
-                <div class="stat">
-                  <div class="meta">Entrenos/semana</div>
-                  <b>4</b>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="card projects reveal delay-3" id="proyectos">
-          <h2>Proyectos destacados</h2>
-          <div class="projects">
-            <div class="project">
-              <div class="thumbnail">NAS</div>
-              <div class="proj-body">
-                <h3>Servidor NAS casero</h3>
-                <p>Configuración de almacenamiento en red con snapshots, backups automáticos y acceso remoto seguro.</p>
-              </div>
-            </div>
-
-            <div class="project">
-              <div class="thumbnail">BOT</div>
-              <div class="proj-body">
-                <h3>Bot de monitorización</h3>
-                <p>Script que revisa latencia y estado de servicios, con notificaciones a Telegram.</p>
-              </div>
-            </div>
-
-            <div class="project">
-              <div class="thumbnail">WEB</div>
-              <div class="proj-body">
-                <h3>Landing personal</h3>
-                <p>Web ligera para mostrar proyectos y enlaces a perfiles tech y gaming.</p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="card reveal delay-3">
-          <h2>Intereses y rutina</h2>
-          <p class="meta">Combino mis días entre estudio y entrenamiento. Me gusta planificar comidas en base a objetivos: hipercalórica para ganancia muscular o controlada para definición. Uso apps para llevar progresos y crear planificaciones semanales.</p>
-
-          <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
-            <div class="btn" onclick="openPlay()">Juegos favoritos</div>
-            <a class="btn" href="#contacto">Contactar para colaboración</a>
-          </div>
-        </article>
-      </section>
-
-      <aside class="panel">
-        <div class="card reveal">
-          <h2>Redes y contacto</h2>
-          <p class="meta">Encuéntrame en plataformas tech y gaming.</p>
-          <div style="margin-top:12px;display:flex;flex-direction:column;gap:8px">
-            <a class="btn" href="#" onclick="alert('Coloca aqu\u00ed tus enlaces reales')">GitHub • proyectos</a>
-            <a class="btn" href="#" onclick="alert('Coloca aqu\u00ed tus enlaces reales')">LinkedIn • formación</a>
-            <a class="btn" href="#" onclick="alert('Coloca aqu\u00ed tus enlaces reales')">Steam / Twitch</a>
-          </div>
-        </div>
-
-        <div class="card reveal">
-          <h2>Feed tecnológico</h2>
-          <div class="feed" id="feed">
-            <div class="feed-item"><h4>Placeholder: Novedades tecnológicas</h4><p>En este espacio se podrían mostrar titulares o un RSS con lo más reciente del mundo tech.</p></div>
-            <div class="feed-item"><h4>Placeholder: Artículo interesante</h4><p>Breve descripción para que mantengas tu curiosidad informada.</p></div>
-          </div>
-        </div>
-
-        <div class="card reveal" id="contacto">
-          <h2>Contacto</h2>
-          <form onsubmit="handleSubmit(event)">
-            <input type="text" id="name" placeholder="Tu nombre" required />
-            <input type="email" id="email" placeholder="Tu correo" required />
-            <textarea id="message" rows="4" placeholder="Mensaje" required></textarea>
-            <div class="actions">
-              <button class="btn" type="submit">Enviar</button>
-              <button type="button" class="btn" onclick="downloadVCard()">Descargar vCard</button>
-            </div>
-            <p class="meta" style="margin:6px 0 0 0">O envía un correo a <strong><a href="mailto:tu@correo.com">tu@correo.com</a></strong></p>
-          </form>
-        </div>
-      </aside>
-    </main>
-
-    <footer class="reveal">
-      <div>Diseñado para presentar tus intereses: <strong>tecnología</strong>, <strong>musculación</strong> y <strong>videojuegos</strong>.</div>
-      <div>Hecho con HTML, CSS y un poco de JS • 2025</div>
-    </footer>
-  </div>
-
-  <script>
-    // pequeñas interacciones
-    function openPlay(){
-      alert('Tus juegos favoritos: agrega una lista o enlaces a tus perfiles.');
-    }
-
-    function handleSubmit(e){
-      e.preventDefault();
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const msg = document.getElementById('message').value;
-      // Simulación de envío: abre mailto con contenido prellenado
-      const subject = encodeURIComponent('Contacto desde portfolio - ' + name);
-      const body = encodeURIComponent('Nombre: ' + name + '\nCorreo: ' + email + '\n\n' + msg);
-      window.location.href = 'mailto:tu@correo.com?subject=' + subject + '&body=' + body;
-    }
-
-    function downloadVCard(){
-      const vcard = `BEGIN:VCARD\nVERSION:3.0\nFN:Chaval 19\nORG:Estudiante - Administración de Sistemas\nEMAIL:tu@correo.com\nTITLE:Student\nEND:VCARD`;
-      const blob = new Blob([vcard], {type: 'text/vcard'});
-      const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = 'chaval19.vcf';
-      a.click();
-      URL.revokeObjectURL(a.href);
-    }
-
-    // pequeñas mejoras: revelar elementos al entrar en viewport
-    const observer = new IntersectionObserver((entries)=>{
-      entries.forEach(e => {
-        if(e.isIntersecting) e.target.classList.add('visible');
-      });
-    });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-    // placeholder: podrías inyectar un feed RSS con fetch() si alojas la web en un servidor con CORS permitido.
-  </script>
+        
+        <p style="margin-top: 20px; color: #666;">
+            Si el archivo no se descarga automáticamente, verifica la ruta del archivo.
+        </p>
+    </div>
 </body>
 </html>
